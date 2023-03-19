@@ -2,12 +2,17 @@ import numpy as np
 
 speed_max = 2 # максимальная скорость корабля, равная 2 световых года в день;
 Reactor_power = 0
-Ship_mass = 192
 
-def calculate_speed(speed_max, Reactor_power, Ship_mass):
-    return speed_max * np.divide(Reactor_power, 80) * np.divide(200, Ship_mass)
 
-def calculate_growth_rate(autoclave_temperature, oxygen_units):
+def calculate_speed(Reactor_power, Ship_mass):
+    return 2 * np.divide(Reactor_power, 80) * np.divide(200, Ship_mass)
+
+def calculate_growth_rate(autoclave_temperature, oxygen, SH):
+    if oxygen // 60 >= SH:
+        oxygen_units = 60
+    else:
+        oxygen_units = oxygen // SH
+        return "dead"
     return  np.sin(np.divide(np.pi, 2) + 
                    np.divide(np.pi*(autoclave_temperature + 0.5 * oxygen_units), 40))
 

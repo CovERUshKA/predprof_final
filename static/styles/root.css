@@ -1,0 +1,45 @@
+
+:root{
+    /*________ ALL  ________*/
+    --border-radius: 0.5rem;
+    --padding-sm: 0.5rem;
+    --padding-md: 1rem;
+    --padding-bg: 1.5rem;
+
+    /*________ FONT  ________*/
+    --font-family: Arial;
+    --font-size-sm: 0.5rem;
+    --font-size-md: 1rem;
+    --font-size-bg: 2rem;
+
+    /*________ COLORS  ________*/
+    --bg-dark-color: rgb(0,0,0);
+    --bg-light-color: rgb(24, 28, 39);
+    --bg-more-light-color: rgb(41, 48, 66);
+    --bg-hover-color: rgb(78, 91, 122);
+    --bg-active-color: rgb(110, 126, 163);
+    --color: white;
+    
+    /*________ Card  ________*/
+    --card-height: 400px;
+    --card-width: 200px;
+
+    /*________ Button  ________*/
+    --button-height: 100px;
+    --button-width: 100px;
+    
+    /*________ Shadow  ________*/
+    --shadow-light: -2px -2px 10px lightblue;
+    --shadow-dark: 2px 2px 10px rgb(23, 30, 33);
+
+    --shadow: var(--shadow-light),var(--shadow-dark);
+
+    /*________ Glow Card  ________*/
+    --clr-1: #052b2f;
+    --clr-2: #073438;
+    --clr-3: #0e4b50;
+    --clr-4: #2d8f85;
+    --clr-5: #637c54;
+
+    /*________ ***  ________*/
+}
